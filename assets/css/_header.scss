@@ -1,0 +1,109 @@
+// Variables
+
+// Colores
+// $fondoBasePri: #3cbcfc;
+$fondoPri: #3cbcfc;
+$fondoSec: white;
+$fondoTer: rgba(128, 128, 128, 0.514);
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&family=Source+Serif+Pro:ital,wght@0,300;0,700;1,200;1,300&display=swap');
+
+// Fuente Variables
+$fuenteTitulo: 'Source Serif Pro', serif;
+$fuenteParrafo: 'Poppins', sans-serif;
+
+$tamañoTitulo: 1.5rem;
+$tamañoParrafo: 1rem;
+
+html {
+	// font-size: calc(1rem + 1vw);
+	font-size: 16px;
+}
+
+* {
+	font-family: $fuenteParrafo;
+	font-size: 1rem;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+// HEADER
+header {
+	width: 80%;
+	height: auto;
+	margin: auto;
+	background-color: $fondoPri;
+}
+
+.containerH {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.containerH__logo {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: solid 1px $fondoSec;
+}
+
+.containerH__imgl {
+	width: 30%;
+	border-radius: 50%;
+}
+
+.menu {
+	width: 80%;
+}
+
+.menu__ul {
+	flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__li {
+	list-style: none;
+	margin: 0 15px;
+}
+
+.menu__a {
+	text-decoration: none;
+	color: black;
+	&:visited {
+		color: black;
+	}
+	&:hover {
+		color: $fondoSec;
+		border-bottom: solid 3px $fondoTer;
+		transition: color, border-bottom .5s ease-in-out 0s;
+	}
+}
+// HEADER
+
+
+// BOTONES
+.buttonmain {
+	width: 100%;
+	height: 80%;
+	justify-self: flex-end;
+	border-radius: 15px;
+	background-color: $fondoTer;
+	cursor: pointer;
+	transition: color, background-color .3s ease-in-out 0s;
+	&:hover {
+		color: gray;
+		background-color: $fondoSec;
+	}
+}
