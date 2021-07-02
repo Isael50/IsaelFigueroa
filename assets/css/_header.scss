@@ -1,3 +1,19 @@
+
+
+@media (prefers-color-scheme: dark) {
+	.day.dark-scheme   { background:  #333; color: white; }
+	.night.dark-scheme { background: black; color:  #ddd; }
+  }
+  
+  @media (prefers-color-scheme: light) {
+	$fondoPri: #3cbcfc;
+	$fondoSec: white;
+	$fondoTer: rgba(128, 128, 128, 0.514);
+  }
+
+
+
+
 // Variables
 
 // Colores
@@ -77,6 +93,32 @@ header {
 	list-style: none;
 	margin: 0 15px;
 }
+
+.menu__p {
+	cursor: pointer;
+}
+
+// coA::after {
+// 	content: var(--content);
+// }
+
+
+// --content: '🌞 light version';
+
+
+
+
+
+
+// <li id="oscuroli" class="menu__li menu__li2">
+// <a id="oscuroA" href="./curriculum.html" class="menu__a menu__a2">Oscuro</a>
+// </li>
+// <li id="claroli" class="menu__li menu__li2">
+// <a id="claroA" href="./curriculum.html" class="menu__a menu__a2">Claro</a>
+// </li>
+
+
+
 
 .menu__a {
 	text-decoration: none;

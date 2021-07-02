@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&family=Source+Serif+Pro:ital,wght@0,300;0,700;1,200;1,300&display=swap");
+@media (prefers-color-scheme: dark) {
+  .day.dark-scheme {
+    background: #333;
+    color: white;
+  }
+  .night.dark-scheme {
+    background: black;
+    color: #ddd;
+  }
+}
+
 html {
   font-size: 16px;
 }
@@ -79,6 +90,10 @@ header {
   margin: 0 15px;
 }
 
+.menu__p {
+  cursor: pointer;
+}
+
 .menu__a {
   text-decoration: none;
   color: black;
@@ -152,6 +167,7 @@ footer {
 
 .containerF__datos {
   width: 80%;
+  text-align: center;
 }
 
 .containerCV {

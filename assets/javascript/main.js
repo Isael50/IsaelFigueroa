@@ -67,3 +67,33 @@ boton4.onmouseover = function () {
 
 var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene);
+
+
+
+
+
+
+const coLI = document.getElementById("coLI");
+const coA = document.getElementById("coA");
+
+coA.onclick = function() {
+	if(coA.innerText == "Oscuro") {
+		coA.innerText = "Claro";
+	}else if (coA.innerText == "Claro") {
+		coA.innerText = "Oscuro";
+	}
+} 
+
+
+
+
+
+// <li id="oscuroli" class="menu__li menu__li2">
+// <a id="oscuroA" href="./curriculum.html" class="menu__a menu__a2">Oscuro</a>
+// </li>
+// <li id="claroli" class="menu__li menu__li2">
+// <a id="claroA" href="./curriculum.html" class="menu__a menu__a2">Claro</a>
+// </li>
+
+
+
